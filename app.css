@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+}
+html {
+  font-size: 10px;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#heading {
+  justify-self: flex-start;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+#quote-box {
+  color: whitesmoke;
+  padding: 2rem 4rem;
+  min-width: 600px;
+  max-width: 40vw;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+#text {
+  text-indent: 1rem;
+  position: relative;
+}
+.fa-quote-left {
+  position: absolute;
+  padding-bottom: 2rem;
+  color: #fff5;
+  top: -1rem;
+  left: -3.5rem;
+}
+.button {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: 300ms ease;
+}
+.button:hover {
+  background-image: linear-gradient(to right, #2224, #2224) !important;
+}
+.btns-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.btns-container a {
+  height: 3rem;
+}
+
+#author {
+  margin-left: auto;
+  width: max-content;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 650px) {
+  #heading {
+    text-align: center;
+    top: 2rem;
+    font-size: 3rem;
+  }
+  #quote-box {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #quote-box {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #quote-box {
+    min-width: 250px;
+  }
+}
